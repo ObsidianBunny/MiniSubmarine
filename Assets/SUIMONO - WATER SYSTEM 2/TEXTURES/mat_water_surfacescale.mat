@@ -52,7 +52,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FoamTex:
         m_Texture: {fileID: 2800000, guid: 14c55ed649175884784db6c178f4e654, type: 3}
-        m_Scale: {x: 0.781425, y: 0.781425}
+        m_Scale: {x: 16.524, y: 16.524}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -136,23 +136,23 @@ Material:
     - _reflecTerm: 0.255
     - _suimono_DeepWaveHeight: 0.945
     - _suimono_DetailHeight: 1.63
-    - _suimono_detScale: 0.19
-    - _suimono_uv2x: 0
-    - _suimono_uv2y: 0
-    - _suimono_uv3x: 0
-    - _suimono_uv3y: 0
-    - _suimono_uv4x: 0
-    - _suimono_uv4y: 0
-    - _suimono_uv5x: 0
-    - _suimono_uv5y: 0
-    - _suimono_uv6x: 0
-    - _suimono_uv6y: 0
+    - _suimono_detScale: 10.5
+    - _suimono_uv2x: 0.328158
+    - _suimono_uv2y: 0.000000014344241
+    - _suimono_uv3x: 0.3821123
+    - _suimono_uv3y: 0.000000016702659
+    - _suimono_uv4x: 0.31000277
+    - _suimono_uv4y: 0.000000013550651
+    - _suimono_uv5x: 0.48811728
+    - _suimono_uv5y: 0.000000021336284
+    - _suimono_uv6x: 0.20399779
+    - _suimono_uv6y: 0.000000008917026
     - _suimono_uv7x: 1
     - _suimono_uv7y: 1
     - _suimono_uv8x: 1
     - _suimono_uv8y: 1
-    - _suimono_uvx: 0
-    - _suimono_uvy: 0
+    - _suimono_uvx: 0.36395705
+    - _suimono_uvy: 0.000000015909068
     - _temp: 1
     - _useDynamicReflections: 1
     - suimonoDiffHeight: 1

@@ -44,15 +44,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FoamOverlay:
         m_Texture: {fileID: 2800000, guid: dd5f830482b013a43b967ea68de614d7, type: 3}
-        m_Scale: {x: 0.781425, y: 0.781425}
-        m_Offset: {x: 0, y: 0}
+        m_Scale: {x: 16.524, y: 16.524}
+        m_Offset: {x: -0.07102987, y: -0.0000000031048144}
     - _FoamRamp:
         m_Texture: {fileID: 2800000, guid: 01757909dcbf805408fe7867004a31a3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FoamTex:
         m_Texture: {fileID: 2800000, guid: 14c55ed649175884784db6c178f4e654, type: 3}
-        m_Scale: {x: 0.781425, y: 0.781425}
+        m_Scale: {x: 16.524, y: 16.524}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -72,15 +72,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Surface1:
         m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
-        m_Scale: {x: 4.62, y: 4.62}
+        m_Scale: {x: 14.099999, y: 14.099999}
         m_Offset: {x: 0, y: 0.038000003}
     - _Surface2:
         m_Texture: {fileID: 2800000, guid: 942587b74267e4d44b3723de33d8499a, type: 3}
-        m_Scale: {x: 5.25, y: 5.25}
+        m_Scale: {x: 10.5, y: 10.5}
         m_Offset: {x: 0, y: 0}
     - _WaveLargeTex:
         m_Texture: {fileID: 2800000, guid: 48e29dc2e9488474081bc20a42a364b9, type: 3}
-        m_Scale: {x: 5.25, y: 5.25}
+        m_Scale: {x: 10.5, y: 10.5}
         m_Offset: {x: 0, y: 1}
     - _WaveMap:
         m_Texture: {fileID: 0}
@@ -93,7 +93,7 @@ Material:
     - _WaveTex:
         m_Texture: {fileID: 2800000, guid: 9e0b039b60bba5c4ea73849d69af386a, type: 3}
         m_Scale: {x: 0, y: 0}
-        m_Offset: {x: -0, y: -0}
+        m_Offset: {x: 0.34605753, y: 0.34605753}
     - _testTransTex:
         m_Texture: {fileID: 8400000, guid: 4cbb053dd78893346b31535310230dc4, type: 2}
         m_Scale: {x: 1, y: 1}
@@ -110,11 +110,11 @@ Material:
     - _EdgeSpread: 0.02
     - _FlowScale: 6.0895004
     - _FoamHeight: 0
-    - _FoamSpread: 0.415
+    - _FoamSpread: 0.376
     - _HeightFoamAmount: 0
     - _HeightFoamSpread: 0
     - _MaskAmt: 8
-    - _MasterScale: 2.25
+    - _MasterScale: 22.5
     - _MaxVariance: 8.299999
     - _ReflBlend: 0.015
     - _ReflBlur: 0.01
@@ -122,15 +122,15 @@ Material:
     - _ReflectStrength: 100
     - _RefrScale: 2.25
     - _RefrSpeed: 15.2
-    - _RefrStrength: 0
+    - _RefrStrength: 5
     - _RimPower: 1
     - _ShallowFoamAmt: 0
-    - _ShoreAmt: -3.5
+    - _ShoreAmt: -7.551
     - _ShoreAmtDk: 1
     - _SpecScatterAmt: 0.5
     - _SpecScatterWidth: 0.1
     - _Tess: 20
-    - _TideAmount: 0.3
+    - _TideAmount: 0.41
     - _TideSpread: 0.513
     - _UnderFogDist: -0.054
     - _UnderReflDist: -4.28
@@ -145,26 +145,26 @@ Material:
     - _reflecTerm: 0
     - _suimono_DeepWaveHeight: 0.945
     - _suimono_DetailHeight: 1.63
-    - _suimono_detScale: 0.19
-    - _suimono_uv2x: 0
-    - _suimono_uv2y: 0
-    - _suimono_uv3x: 0
-    - _suimono_uv3y: 0
-    - _suimono_uv4x: 0
-    - _suimono_uv4y: 0
-    - _suimono_uv5x: 0
-    - _suimono_uv5y: 0
-    - _suimono_uv6x: 0
-    - _suimono_uv6y: 0
+    - _suimono_detScale: 10.5
+    - _suimono_uv2x: 0.328158
+    - _suimono_uv2y: 0.000000014344241
+    - _suimono_uv3x: 0.3821123
+    - _suimono_uv3y: 0.000000016702659
+    - _suimono_uv4x: 0.31000277
+    - _suimono_uv4y: 0.000000013550651
+    - _suimono_uv5x: 0.48811728
+    - _suimono_uv5y: 0.000000021336284
+    - _suimono_uv6x: 0.20399779
+    - _suimono_uv6y: 0.000000008917026
     - _suimono_uv7x: 0
     - _suimono_uv7y: 0
     - _suimono_uv8x: 1
     - _suimono_uv8y: 1
-    - _suimono_uvx: 0
-    - _suimono_uvy: 0
+    - _suimono_uvx: 0.36395705
+    - _suimono_uvy: 0.000000015909068
     - _temp: 1
     - _useDynamicReflections: 1
-    - normalShore: 1
+    - normalShore: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthColor: {r: 0, g: 0, b: 0, a: 0}
