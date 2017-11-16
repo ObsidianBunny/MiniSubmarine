@@ -45,7 +45,7 @@ Material:
     - _FoamOverlay:
         m_Texture: {fileID: 2800000, guid: dd5f830482b013a43b967ea68de614d7, type: 3}
         m_Scale: {x: 16.524, y: 16.524}
-        m_Offset: {x: -0.09743954, y: -0.0000000042592174}
+        m_Offset: {x: -1.7515749, y: -0.00000007656377}
     - _FoamRamp:
         m_Texture: {fileID: 2800000, guid: 01757909dcbf805408fe7867004a31a3, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -93,7 +93,7 @@ Material:
     - _WaveTex:
         m_Texture: {fileID: 2800000, guid: 9e0b039b60bba5c4ea73849d69af386a, type: 3}
         m_Scale: {x: 0, y: 0}
-        m_Offset: {x: 0.47472543, y: 0.47472543}
+        m_Offset: {x: 8.533672, y: 8.533672}
     - _testTransTex:
         m_Texture: {fileID: 8400000, guid: 4cbb053dd78893346b31535310230dc4, type: 2}
         m_Scale: {x: 1, y: 1}
@@ -110,7 +110,7 @@ Material:
     - _EdgeSpread: 0.02
     - _FlowScale: 6.0895004
     - _FoamHeight: 0
-    - _FoamSpread: 0.484
+    - _FoamSpread: 0.48
     - _HeightFoamAmount: 0
     - _HeightFoamSpread: 0
     - _MaskAmt: 8
@@ -125,12 +125,12 @@ Material:
     - _RefrStrength: 5
     - _RimPower: 1
     - _ShallowFoamAmt: 0
-    - _ShoreAmt: -5.404
+    - _ShoreAmt: -7.95
     - _ShoreAmtDk: 1
     - _SpecScatterAmt: 0.5
     - _SpecScatterWidth: 0.1
     - _Tess: 20
-    - _TideAmount: 0.228
+    - _TideAmount: 0.345
     - _TideSpread: 0.513
     - _UnderFogDist: -0.054
     - _UnderReflDist: -4.28
@@ -146,38 +146,38 @@ Material:
     - _suimono_DeepWaveHeight: 0.945
     - _suimono_DetailHeight: 1.63
     - _suimono_detScale: 10.5
-    - _suimono_uv2x: 0.45017067
-    - _suimono_uv2y: 0.000000019677584
-    - _suimono_uv3x: 0.5241857
-    - _suimono_uv3y: 0.000000022912886
-    - _suimono_uv4x: 0.4252651
-    - _suimono_uv4y: 0.00000001858893
-    - _suimono_uv5x: 0.66960454
-    - _suimono_uv5y: 0.000000029269343
-    - _suimono_uv6x: 0.27984634
-    - _suimono_uv6y: 0.000000012232473
+    - _suimono_uv2x: 8.092276
+    - _suimono_uv2y: 0.0000003537246
+    - _suimono_uv3x: 9.422772
+    - _suimono_uv3y: 0.00000041188247
+    - _suimono_uv4x: 7.644573
+    - _suimono_uv4y: 0.00000033415492
+    - _suimono_uv5x: 12.036822
+    - _suimono_uv5y: 0.0000005261462
+    - _suimono_uv6x: 5.030523
+    - _suimono_uv6y: 0.00000021989113
     - _suimono_uv7x: 0
     - _suimono_uv7y: 0
     - _suimono_uv8x: 1
     - _suimono_uv8y: 1
-    - _suimono_uvx: 0.49928018
-    - _suimono_uvy: 0.00000002182423
+    - _suimono_uvx: 8.97507
+    - _suimono_uvy: 0.00000039231276
     - _temp: 1
     - _useDynamicReflections: 1
     - normalShore: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthColor: {r: 0, g: 0, b: 0, a: 0}
-    - _DepthColorB: {r: 0.19, g: 0.34, b: 0.38, a: 1}
+    - _DepthColorB: {r: 1, g: 0.44, b: 0, a: 1}
     - _DepthColorG: {r: 0.68, g: 1, b: 0.49, a: 0.24}
     - _DepthColorR: {r: 0, g: 0, b: 0, a: 0}
-    - _DynReflColor: {r: 1, g: 1, b: 1, a: 0.51}
+    - _DynReflColor: {r: 1, g: 1, b: 1, a: 0.5}
     - _EdgeColor: {r: 0.73, g: 1, b: 0.94, a: 0}
     - _FoamColor: {r: 0.92, g: 0.91, b: 0.88, a: 0}
     - _HighColor: {r: 1, g: 0.81, b: 0, a: 0.29}
     - _LowColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SpecColorH: {r: 0.97, g: 0.97, b: 0.97, a: 0.66}
-    - _SpecColorL: {r: 0.6, g: 0.98, b: 0, a: 0.77}
+    - _SpecColorH: {r: 1, g: 0.48, b: 0, a: 1}
+    - _SpecColorL: {r: 1, g: 0, b: 0, a: 1}
     - _TideColor: {r: 0.24, g: 0.34, b: 0.32, a: 0}
-    - _UnderColor: {r: 0.56, g: 0.93, b: 1, a: 0.84}
+    - _UnderColor: {r: 1, g: 0.62, b: 0.17, a: 1}
     - _castshadowColor: {r: 0, g: 1, b: 0.79, a: 0.18}

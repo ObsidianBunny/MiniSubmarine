@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: mat2_effect_refract
-  m_Shader: {fileID: 4800000, guid: 7a88810b3a36ac741ae05e10cfc23af4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4e051a78af4ec3941a3c09b05dafa059, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
@@ -46,18 +46,18 @@ Material:
     - _AnimSpeed: 0.19
     - _BlurSpread: 0.005
     - _DepthAmt: 0.001
-    - _MasterScale: 0.43
+    - _MasterScale: 0.86
     - _RefrSpeed: 0.19
-    - _RefrStrength: 0.28
-    - _UnderReflDist: 0.331
+    - _RefrStrength: 0.752
+    - _UnderReflDist: 0.572
     - _suimonoHeight: 1
-    - _transition: 0.15764017
-    - _underFogStart: 0.223
+    - _transition: 0.000000068408376
+    - _underFogStart: 0.229
     - _underFogStretch: 0.004
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthColor: {r: 0.5058824, g: 1, b: 1, a: 1}
-    - _DepthColorB: {r: 0.46, g: 0.91, b: 1, a: 0.63}
+    - _DepthColorB: {r: 0.56, g: 0.93, b: 1, a: 0.84}
     - _DepthColorG: {r: 0.26666668, g: 0.2, b: 0.52156866, a: 1}
     - _DepthColorR: {r: 0.61960787, g: 0.94509804, b: 1, a: 1}
     - _DiffuseColor: {r: 0.54901963, g: 0.42745098, b: 1, a: 1}
