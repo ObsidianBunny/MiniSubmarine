@@ -137,22 +137,22 @@ Material:
     - _suimono_DeepWaveHeight: 0.945
     - _suimono_DetailHeight: 1.63
     - _suimono_detScale: 10.5
-    - _suimono_uv2x: 0.45017067
-    - _suimono_uv2y: 0.000000019677584
-    - _suimono_uv3x: 0.5241857
-    - _suimono_uv3y: 0.000000022912886
-    - _suimono_uv4x: 0.4252651
-    - _suimono_uv4y: 0.00000001858893
-    - _suimono_uv5x: 0.66960454
-    - _suimono_uv5y: 0.000000029269343
-    - _suimono_uv6x: 0.27984634
-    - _suimono_uv6y: 0.000000012232473
+    - _suimono_uv2x: 8.092276
+    - _suimono_uv2y: 0.0000003537246
+    - _suimono_uv3x: 9.422772
+    - _suimono_uv3y: 0.00000041188247
+    - _suimono_uv4x: 7.644573
+    - _suimono_uv4y: 0.00000033415492
+    - _suimono_uv5x: 12.036822
+    - _suimono_uv5y: 0.0000005261462
+    - _suimono_uv6x: 5.030523
+    - _suimono_uv6y: 0.00000021989113
     - _suimono_uv7x: 1
     - _suimono_uv7y: 1
     - _suimono_uv8x: 1
     - _suimono_uv8y: 1
-    - _suimono_uvx: 0.49928018
-    - _suimono_uvy: 0.00000002182423
+    - _suimono_uvx: 8.97507
+    - _suimono_uvy: 0.00000039231276
     - _temp: 1
     - _useDynamicReflections: 1
     - suimonoDiffHeight: 1
