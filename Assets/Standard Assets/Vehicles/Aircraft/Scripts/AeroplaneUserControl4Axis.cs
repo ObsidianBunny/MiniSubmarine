@@ -8,15 +8,16 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
     public class AeroplaneUserControl4Axis : MonoBehaviour
     {
         // these max angles are only used on mobile, due to the way pitch and roll input are handled
-        public float maxRollAngle = 80;
-        public float maxPitchAngle = 80;
+        public float maxRollAngle = 40;
+        public float maxPitchAngle = 20;
 
         // reference to the aeroplane that we're controlling
         private AeroplaneController m_Aeroplane;
         private float m_Throttle;
         private bool m_AirBrakes;
         private float m_Yaw;
-
+        private int m_ScreenWidth = Screen.width;
+        private int m_ScreenHeigth = Screen.height;
 
         private void Awake()
         {
@@ -28,15 +29,16 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private void FixedUpdate()
         {
             // Read input for the pitch, yaw, roll and throttle of the aeroplane.
-            float roll = CrossPlatformInputManager.GetAxis("Mouse X");
-            float pitch = CrossPlatformInputManager.GetAxis("Mouse Y");
-            m_AirBrakes = CrossPlatformInputManager.GetButton("Fire1");
+            float roll = (Input.mousePosition[0] - m_ScreenWidth/2)/ (m_ScreenWidth*2);
+            float pitch = (Input.mousePosition[1] - m_ScreenHeigth/2)/(m_ScreenHeigth*2);
+            m_AirBrakes = CrossPlatformInputManager.GetButton("Fire2");
             m_Yaw = CrossPlatformInputManager.GetAxis("Horizontal");
             m_Throttle = CrossPlatformInputManager.GetAxis("Vertical");
 #if MOBILE_INPUT
         AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
 #endif
             // Pass the input to the aeroplane
+            Debug.Log("Roll : "+roll+"    Pitch : "+pitch);
             m_Aeroplane.Move(roll, pitch, m_Yaw, m_Throttle, m_AirBrakes);
         }
 
