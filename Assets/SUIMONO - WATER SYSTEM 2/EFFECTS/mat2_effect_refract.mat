@@ -48,11 +48,11 @@ Material:
     - _DepthAmt: 0.001
     - _MasterScale: 0.86
     - _RefrSpeed: 0.19
-    - _RefrStrength: 0.752
-    - _UnderReflDist: 0.572
+    - _RefrStrength: 0.66
+    - _UnderReflDist: 1
     - _suimonoHeight: 1
-    - _transition: 0.000000068408376
-    - _underFogStart: 0.229
+    - _transition: 0
+    - _underFogStart: 0.75
     - _underFogStretch: 0.004
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
