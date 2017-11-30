@@ -4,32 +4,47 @@ using UnityEngine;
 
 public class RandomMoves : MonoBehaviour
 {
-    public float vitesse_translation = 1.2f;
-    public float vitesse_rotation = 10.0f;
+    public float vitesse_translation;
+    public float vitesse_rotation;
     float angle;
-    Collider collider;
+
+    Collider collisionneur;
+
+    Vector3 fwd;
+    RaycastHit hit;
+
     // Use this for initialization
     void Start()
     {
-        collider = GetComponent<Collider>();
+        collisionneur = GetComponent<Collider>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        Ray ray = new Ray(transform.position, transform.forward);
-        RaycastHit hit;
+        //Ray ray = new Ray(transform.position, transform.forward);
 
-        if (collider.Raycast(ray, out hit, 100.00f))
+        //Debug.Log(collisionneur.Raycast(ray, out hit, 200.00f));
+        Debug.DrawRay(this.transform.position, transform.forward*50);
+
+        fwd = transform.TransformDirection(Vector3.forward);
+
+        //collisionneur.Raycast(ray, out hit, 200.00f))
+
+        if (Physics.Raycast(this.transform.position, fwd, out hit)) 
         {
-            Vector3 newPosition = Random.insideUnitCircle * 5;
-            angle = Mathf.Lerp(angle, Random.Range(-20.0f, 20.0f), Time.deltaTime);
-            transform.position.Set(newPosition.x, newPosition.y, newPosition.z);
-            transform.Rotate(0, vitesse_rotation * angle * Time.deltaTime, 0);
+            if (hit.distance < 200.0f) {
+                Vector3 newPosition = Random.insideUnitCircle * 5;
+                angle = Mathf.Lerp(angle, Random.Range(-30.0f, 30.0f), Time.deltaTime);
+                //transform.position.Set(newPosition.x, newPosition.y, newPosition.z);
+                transform.Rotate(0, vitesse_rotation * angle * Time.deltaTime, 0);
+                transform.Rotate(vitesse_rotation * angle * Time.deltaTime, 0, 0);
+            }
         }
 
         transform.Translate(Vector3.forward * vitesse_translation * Time.deltaTime);
+        
 
     }
 }

@@ -104,7 +104,7 @@ public class CameraController : MonoBehaviour
      */
     void Zoom()
     {
-        Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
+        //Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
 
         if (Input.GetAxis("Mouse ScrollWheel") < 0.0f)
         {
