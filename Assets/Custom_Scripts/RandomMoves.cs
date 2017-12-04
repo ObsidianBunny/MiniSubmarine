@@ -26,7 +26,7 @@ public class RandomMoves : MonoBehaviour
         //Ray ray = new Ray(transform.position, transform.forward);
 
         //Debug.Log(collisionneur.Raycast(ray, out hit, 200.00f));
-        Debug.DrawRay(this.transform.position, transform.forward*50);
+        //Debug.DrawRay(this.transform.position, transform.forward*50);
 
         fwd = transform.TransformDirection(Vector3.forward);
 
@@ -42,6 +42,20 @@ public class RandomMoves : MonoBehaviour
                 transform.Rotate(vitesse_rotation * angle * Time.deltaTime, 0, 0);
             }
         }
+
+        /*if (transform.rotation.z != 0)
+        {
+
+            if (transform.rotation.z < 0)
+            {
+                angle = Mathf.Lerp(angle, Random.Range(10.0f, 0), Time.deltaTime);
+            }
+            else
+            {
+                angle = Mathf.Lerp(angle, Random.Range(-10.0f, 0), Time.deltaTime);
+            }
+            transform.Rotate(0, 0, vitesse_rotation * angle * Time.deltaTime);
+        }*/
 
         transform.Translate(Vector3.forward * vitesse_translation * Time.deltaTime);
         
