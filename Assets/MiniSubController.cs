@@ -6,7 +6,8 @@ public class MiniSubController : MonoBehaviour {
 
     [SerializeField] private GameObject cam;
     private Rigidbody r;
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float speed = 4f;
+    private float rtSpeed;
     Vector3 dirForward, dirStrafe;
 
     private void Start()
@@ -16,10 +17,16 @@ public class MiniSubController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        float step = Time.deltaTime * speed;
-        dirForward = transform.position - cam.transform.position.normalized;
+        //float step = Time.deltaTime * speed;
 
-        r.AddForce(100 * dirForward * Input.GetAxis("Vertical"));
+        rtSpeed = speed;
+
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            rtSpeed *= 2;
+
+        dirForward = (transform.position - cam.transform.position).normalized;
+
+        r.AddForce(50 * rtSpeed * dirForward * Input.GetAxis("Vertical"));
 
         //Vector3.RotateTowards(submarine.transform.rotation, dirForward, step, 0.0F);
 
