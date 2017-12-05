@@ -7,7 +7,7 @@ public class MiniSubController : MonoBehaviour {
     [SerializeField] private GameObject cam;
     private Rigidbody r;
     [SerializeField] private float speed = 4f;
-    [SerializeField] private float step = .1f;
+    [SerializeField] private float step = .01f;
 
     private float rtSpeed;
     Vector3 dirForward, dirStrafe;
@@ -27,11 +27,10 @@ public class MiniSubController : MonoBehaviour {
         dirForward = (transform.position - cam.transform.position).normalized;
 
         r.AddForce(50 * rtSpeed * dirForward * Input.GetAxis("Vertical"));
+        r.AddForce(30 * rtSpeed * transform.right * Input.GetAxis("Horizontal"));
 
         Vector3 dir = Vector3.RotateTowards(transform.forward, cam.transform.forward, step, 0.0F);
 
         transform.rotation = Quaternion.LookRotation(dir);
-
-        //r.AddForce(100 * Vector3.right * Input.GetAxis("Horizontal"));
     }
 }
