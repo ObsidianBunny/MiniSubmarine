@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 79dfcd19e4da9f3458dcf6a16fac3f6c
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box101
+    100004: Box102
+    100006: Box103
+    100008: Box104
+    100010: Box105
+    100012: Box106
+    100014: Box107
+    100016: Box108
+    100018: Box109
+    100020: Box110
+    100022: ctrlnourture poisson
+    100024: ctrlnourture poisson001
+    100026: ctrlnourture poisson002
+    100028: ctrlnourture poisson003
+    100030: ctrlnourture poisson004
+    100032: R1_aqua_food002
+    400000: //RootNode
+    400002: Box101
+    400004: Box102
+    400006: Box103
+    400008: Box104
+    400010: Box105
+    400012: Box106
+    400014: Box107
+    400016: Box108
+    400018: Box109
+    400020: Box110
+    400022: ctrlnourture poisson
+    400024: ctrlnourture poisson001
+    400026: ctrlnourture poisson002
+    400028: ctrlnourture poisson003
+    400030: ctrlnourture poisson004
+    400032: R1_aqua_food002
+    2300000: Box101
+    2300002: Box102
+    2300004: Box103
+    2300006: Box104
+    2300008: Box105
+    2300010: Box106
+    2300012: Box107
+    2300014: Box108
+    2300016: Box109
+    2300018: Box110
+    2300020: R1_aqua_food002
+    3300000: Box101
+    3300002: Box102
+    3300004: Box103
+    3300006: Box104
+    3300008: Box105
+    3300010: Box106
+    3300012: Box107
+    3300014: Box108
+    3300016: Box109
+    3300018: Box110
+    3300020: R1_aqua_food002
+    4300000: R1_aqua_food002
+    4300002: Box101
+    4300004: Box107
+    4300006: Box102
+    4300008: Box108
+    4300010: Box103
+    4300012: Box109
+    4300014: Box104
+    4300016: Box110
+    4300018: Box105
+    4300020: Box106
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ctrlnourture poisson
+        weight: 1
+      - path: ctrlnourture poisson/Box101
+        weight: 1
+      - path: ctrlnourture poisson/Box107
+        weight: 1
+      - path: ctrlnourture poisson001
+        weight: 1
+      - path: ctrlnourture poisson001/Box102
+        weight: 1
+      - path: ctrlnourture poisson001/Box108
+        weight: 1
+      - path: ctrlnourture poisson002
+        weight: 1
+      - path: ctrlnourture poisson002/Box103
+        weight: 1
+      - path: ctrlnourture poisson002/Box109
+        weight: 1
+      - path: ctrlnourture poisson003
+        weight: 1
+      - path: ctrlnourture poisson003/Box104
+        weight: 1
+      - path: ctrlnourture poisson003/Box110
+        weight: 1
+      - path: ctrlnourture poisson004
+        weight: 1
+      - path: ctrlnourture poisson004/Box105
+        weight: 1
+      - path: ctrlnourture poisson004/Box106
+        weight: 1
+      - path: R1_aqua_food002
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

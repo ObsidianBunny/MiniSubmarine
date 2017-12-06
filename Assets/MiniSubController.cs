@@ -7,7 +7,7 @@ public class MiniSubController : MonoBehaviour {
     [SerializeField] private GameObject cam;
     private Rigidbody r;
     [SerializeField] private float speed = 4f;
-    [SerializeField] private float step = .1f;
+    [SerializeField] private float step = 5f;
 
     private float rtSpeed;
     Vector3 dirForward, dirStrafe;
@@ -20,19 +20,18 @@ public class MiniSubController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) & rtSpeed < 4*speed)
-            rtSpeed *= 1.05f;
-        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.RightShift))
-            rtSpeed = speed;
+        if (Input.GetAxis("Turbo") > 0 & rtSpeed < 5*speed* Input.GetAxis("Turbo"))
+            rtSpeed += 0.1f;
+        else
+        {
+            rtSpeed -= 0.1f;
+            if (rtSpeed < speed) rtSpeed = speed;
+        }
 
-
-        dirForward = (transform.position - cam.transform.position).normalized;
-
-        r.AddForce(50 * rtSpeed * dirForward * Input.GetAxis("Vertical"));
-        r.AddForce(30 * rtSpeed * transform.right * Input.GetAxis("Horizontal"));
+        r.AddForce(50 * rtSpeed * (transform.forward * Input.GetAxis("Vertical") + transform.right * Input.GetAxis("Horizontal") * 0.5f));
         r.AddForce(30 * rtSpeed * transform.up * Input.GetAxis("UpDown"));
 
-        Vector3 dir = Vector3.RotateTowards(transform.forward, cam.transform.forward, step, 0.0F);
+        Vector3 dir = 2*Vector3.RotateTowards(transform.forward, cam.transform.forward, step*Time.deltaTime, 0.0F);
 
         transform.rotation = Quaternion.LookRotation(dir);
     }
