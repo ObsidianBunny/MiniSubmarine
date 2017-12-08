@@ -33,7 +33,7 @@ public class RandomMoves : MonoBehaviour
         fwd = transform.TransformDirection(Vector3.forward);
 
         //collisionneur.Raycast(ray, out hit, 200.00f))
-        Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
+        //Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
         if (Physics.Raycast(this.transform.position, fwd, out hit, 100.0f))
         {
             
@@ -44,9 +44,9 @@ public class RandomMoves : MonoBehaviour
             //transform.position.Set(newPosition.x, newPosition.y, newPosition.z);
             //var desiredRot = Quaternion.Euler(new Vector3(transform.eulerAngles.x + angleX * Time.deltaTime, transform.eulerAngles.y + angleY * Time.deltaTime,0));
             //Debug.Log(angleX + ": angleX "+angleY+": AngleY "+desiredRot);
-            //transform.rotation = Quaternion.LookRotation(new Vector3(vitesse_rotation * angleX * Time.deltaTime, vitesse_rotation * angleY * Time.deltaTime, 0));
+            transform.rotation = Quaternion.LookRotation(new Vector3(vitesse_rotation * angleX * Time.deltaTime, vitesse_rotation * angleY * Time.deltaTime, 0));
             //transform.rotation = Quaternion.Lerp(transform.rotation, desiredRot, vitesse_translation * Time.deltaTime);
-            transform.Rotate(0, vitesse_rotation * angleY * Time.deltaTime, 0);
+            //transform.Rotate(0, vitesse_rotation * angleY * Time.deltaTime, 0);
 
             // }
         }
