@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -134,8 +134,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 26399703}
-  m_LocalRotation: {x: 0.0036914088, y: -0.9135514, z: 0.32510608, w: 0.2443693}
-  m_LocalPosition: {x: 17.669556, y: 422.3665, z: -130.37177}
+  m_LocalRotation: {x: -0.41715062, y: 0.01939421, z: 0.002016555, w: 0.90862817}
+  m_LocalPosition: {x: -9.356201, y: -31.657814, z: -246.22495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1321917887}
@@ -3845,6 +3845,7 @@ GameObject:
   - component: {fileID: 1321917889}
   - component: {fileID: 1321917888}
   - component: {fileID: 1321917890}
+  - component: {fileID: 1321917891}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3983,6 +3984,18 @@ MonoBehaviour:
   _zoomStep: 1.8
   _xSpeed: 4
   _ySpeed: 4
+--- !u!114 &1321917891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1321917882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1354df760f8301439eb0c533998568e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blurPanel: {fileID: 1537111875}
 --- !u!1001 &1322914888
 Prefab:
   m_ObjectHideFlags: 0
@@ -6389,8 +6402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1321917882}
-  speed: 4
-  step: 0.1
+  speed: 2
+  step: 1
 --- !u!54 &2124184897
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6399,12 +6412,12 @@ Rigidbody:
   m_GameObject: {fileID: 2124184895}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 10
+  m_Drag: 8
   m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &2124184898
 BoxCollider:
