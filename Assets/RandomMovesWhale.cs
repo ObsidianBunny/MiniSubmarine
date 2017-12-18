@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomMoves : MonoBehaviour
+public class RandomMovesWhale : MonoBehaviour
 {
+
     public float vitesse_translation;
     public float vitesse_rotation;
     private float angleX, angleY;
@@ -33,20 +34,20 @@ public class RandomMoves : MonoBehaviour
         fwd = transform.TransformDirection(Vector3.forward);
 
         //collisionneur.Raycast(ray, out hit, 200.00f))
-        //Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
+        Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
         if (Physics.Raycast(this.transform.position, fwd, out hit, 100.0f))
         {
-            
+
             // if (hit.distance < 150.0f) {
             //Vector3 newPosition = Random.insideUnitCircle * 5;
-            angleX = Mathf.Lerp(angleX, Random.Range(-180.0f, 180.0f), Time.deltaTime);
-            angleY = Mathf.Lerp(angleY, Random.Range(-50.0f, 50.0f), Time.deltaTime);
+            angleX = Mathf.Lerp(angleX, Random.Range(-60.0f, 60.0f), Time.deltaTime);
+            angleY = Mathf.Lerp(angleY, Random.Range(-50.0f, 0), Time.deltaTime);
             //transform.position.Set(newPosition.x, newPosition.y, newPosition.z);
             //var desiredRot = Quaternion.Euler(new Vector3(transform.eulerAngles.x + angleX * Time.deltaTime, transform.eulerAngles.y + angleY * Time.deltaTime,0));
             //Debug.Log(angleX + ": angleX "+angleY+": AngleY "+desiredRot);
-            transform.rotation = Quaternion.LookRotation(new Vector3(vitesse_rotation * angleX * Time.deltaTime, vitesse_rotation * angleY * Time.deltaTime, 0));
+            //transform.rotation = Quaternion.LookRotation(new Vector3(vitesse_rotation * angleX * Time.deltaTime, vitesse_rotation * angleY * Time.deltaTime, 0));
             //transform.rotation = Quaternion.Lerp(transform.rotation, desiredRot, vitesse_translation * Time.deltaTime);
-            //transform.Rotate(0, vitesse_rotation * angleY * Time.deltaTime, 0);
+            transform.Rotate(0, vitesse_rotation * angleY * Time.deltaTime, 0);
 
             // }
         }
@@ -74,10 +75,6 @@ public class RandomMoves : MonoBehaviour
             q.eulerAngles = new Vector3(q.eulerAngles.x, q.eulerAngles.y, 0);
             transform.rotation = q;
         }*/
-
-
-
-
     }
-}
 
+}
