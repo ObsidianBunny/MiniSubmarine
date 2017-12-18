@@ -7,9 +7,14 @@ public class RandomMovesWhale : MonoBehaviour
 
     public float vitesse_translation;
     public float vitesse_rotation;
+    public AudioClip whaleVoice;
     private float angleX, angleY;
     private Vector3 targetDir;
     private Vector3 newDir;
+
+    private float randomTime = 25.0f;
+    private float timeCounter = 0.0f;
+    AudioSource audioSource;
 
     Collider collisionneur;
 
@@ -20,6 +25,7 @@ public class RandomMovesWhale : MonoBehaviour
     void Start()
     {
         collisionneur = GetComponent<Collider>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,7 +40,6 @@ public class RandomMovesWhale : MonoBehaviour
         fwd = transform.TransformDirection(Vector3.forward);
 
         //collisionneur.Raycast(ray, out hit, 200.00f))
-        Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
         if (Physics.Raycast(this.transform.position, fwd, out hit, 100.0f))
         {
 
@@ -53,8 +58,15 @@ public class RandomMovesWhale : MonoBehaviour
         }
 
         transform.Translate(Vector3.forward * vitesse_translation * Time.deltaTime);
+        Debug.Log(timeCounter+" : TM - RT : "+randomTime);
+        if (timeCounter > randomTime)
+        {
+            randomTime = Random.Range(25.0f, 60.0f);
+            timeCounter = 0.0f;
+            audioSource.PlayOneShot(whaleVoice);
+        }
 
-
+        timeCounter += Time.deltaTime;
         /*if (transform.rotation.z != 0)
         {
 
@@ -78,3 +90,4 @@ public class RandomMovesWhale : MonoBehaviour
     }
 
 }
+
