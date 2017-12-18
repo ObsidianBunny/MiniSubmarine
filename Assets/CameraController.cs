@@ -75,8 +75,8 @@ public class CameraController : MonoBehaviour
      */
     void RotateControls()
     {
-            _x += Input.GetAxis("Mouse X") * _xSpeed;
-            _y += -Input.GetAxis("Mouse Y") * _ySpeed;
+            _x += Input.GetAxis("HorizontalCam") * _xSpeed;
+            _y += -Input.GetAxis("VerticalCam") * _ySpeed;
 
             this.Rotate(_x, _y);
     }

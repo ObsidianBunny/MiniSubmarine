@@ -20,7 +20,7 @@ public class MiniSubController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetAxis("Turbo") > 0 & rtSpeed < 5*speed* Input.GetAxis("Turbo"))
+        if (Input.GetAxis("Turbo") > 0 & rtSpeed < 4*speed* Input.GetAxis("Turbo"))
             rtSpeed += 0.1f;
         else
         {
