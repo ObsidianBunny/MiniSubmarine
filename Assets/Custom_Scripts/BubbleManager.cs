@@ -2,48 +2,62 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleManager : MonoBehaviour {
+public class BubbleManager : MonoBehaviour
+{
 
     private ParticleSystem[] bubbles;
-    private List<ParticleSystem> bubblesList;
+    private List<int> bubblesIdxList;
     private MiniSubController miniSub;
     private Rigidbody rbody;
-    private Vector3 speed;
+    private Vector3 speedVector;
+    private float normeSpeedVector;
 
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         bubbles = GetComponentsInChildren<ParticleSystem>() as ParticleSystem[];
-        bubblesList = new List<ParticleSystem>();
-        for (int i=0; i < bubbles.Length; i++)
+        bubblesIdxList = new List<int>();
+        for (int i = 0; i < bubbles.Length; i++)
         {
-            if(!"SubEmitterDeath".Equals(bubbles[i].name))
+            if (!"SubEmitterDeath".Equals(bubbles[i].name))
             {
-                bubblesList.Add(bubbles[i]);
-                bubblesList[i].Play();
+                bubblesIdxList.Add(i);
+                bubbles[i].Play();
             }
         }
         miniSub = GetComponent<MiniSubController>();
         rbody = miniSub.GetComponent<Rigidbody>() as Rigidbody;
-        speed = rbody.velocity;
+        speedVector = rbody.velocity;
+        normeSpeedVector = Mathf.Sqrt(Mathf.Pow(speedVector.x, 2) + Mathf.Pow(speedVector.y, 2) + Mathf.Pow(speedVector.z, 2));
     }
 
     // Update is called once per frame
-    void Update() {
-        //speed = rbody.velocity;
+    void Update()
+    {
+        speedVector = rbody.velocity;
+        normeSpeedVector = Mathf.Sqrt(Mathf.Pow(speedVector.x, 2) + Mathf.Pow(speedVector.y, 2) + Mathf.Pow(speedVector.z, 2));
+        Debug.Log(normeSpeedVector);
+        if (normeSpeedVector > 2)
+        {
+            foreach (int i in bubblesIdxList)
+            {
+                if(!bubbles[i].isPlaying)
+                {
+                    bubbles[i].Play(true);
+                }
+            }
+        }
+        else
+        {
+            foreach (int i in bubblesIdxList)
+            {
+                if (bubbles[i].isPlaying)
+                {
+                    bubbles[i].Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                }
 
-        //if (speed.x != 0)
-        //{
-        //    foreach (ParticleSystem p in bubblesList)
-        //    {
-        //        p.Play();
-        //        p.Simulate(2f,true, true);
-        //    }
-        //} else {
-        //    foreach (ParticleSystem p in bubblesList)
-        //    {
-        //        p.Clear();
-        //    }
-        //}
+            }
+        }
     }
 }

@@ -34,7 +34,6 @@ public class RandomMovesWhale : MonoBehaviour
         fwd = transform.TransformDirection(Vector3.forward);
 
         //collisionneur.Raycast(ray, out hit, 200.00f))
-        Debug.Log(Physics.Raycast(this.transform.position, fwd, out hit, 100.0f));
         if (Physics.Raycast(this.transform.position, fwd, out hit, 100.0f))
         {
 
