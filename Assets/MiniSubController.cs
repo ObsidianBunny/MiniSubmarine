@@ -35,4 +35,9 @@ public class MiniSubController : MonoBehaviour {
 
         transform.rotation = Quaternion.LookRotation(dir);
     }
+
+    public Rigidbody R
+    {
+        get { return r; }
+    }
 }
