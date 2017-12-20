@@ -5317,7 +5317,6 @@ GameObject:
   - component: {fileID: 33652103677729886}
   - component: {fileID: 23323394455496866}
   - component: {fileID: 65349427442387322}
-  - component: {fileID: 114831888362515548}
   m_Layer: 0
   m_Name: R1_aqua_food002
   m_TagString: interactif
@@ -47154,17 +47153,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114831888362515548
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452632176785864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!137 &137121613888737628
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
